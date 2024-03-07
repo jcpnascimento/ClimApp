@@ -2,8 +2,9 @@
 
 <div ngIf="clima">
     <h2>Clima em {{ city }}</h2>
-    <p>Temperatura: {{ weatherData.main.temp }}°C</p>
+    <p>Temperatura: {{ weatherData.main.temp }} °C</p>
     <p>Descrição: {{ weatherData.weather[0].description }}</p>
+    <p>Latitude: {{ weatherData.coord.lat }} Longitude: {{ weatherData.coord.lon }}</p>
+     <!-- <p>Longitude: {{ weatherData.coord.lon }}</p> -->
+     <P>Umidade do ar: {{ weatherData.main.humidity}}%</P>
   </div>
-  
-  

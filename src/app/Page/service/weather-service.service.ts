@@ -7,12 +7,13 @@ import axios from 'axios';
 export class WeatherService {
   private apiKey = 'ef0b2c2001185007ae598b57895d0420';
   private apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
+  private lang = 'pt'; 
 
   constructor() { }
 
   async getWeather(city: string) {
     try {
-      const response = await axios.get(`${this.apiUrl}?q=${city}&appid=${this.apiKey}`);
+      const response = await axios.get(`${this.apiUrl}?q=${city}&lang=${this.lang}&appid=${this.apiKey}`);
       const weatherData = response.data;
       weatherData.main.temp = this.convertKelvinToCelsius(weatherData.main.temp);
       return weatherData;
