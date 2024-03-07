@@ -1,10 +1,24 @@
 <p>teste works!</p>
 
 <div ngIf="clima">
-    <h2>Clima em {{ city }}</h2>
     <p>Temperatura: {{ weatherData.main.temp }} °C</p>
     <p>Descrição: {{ weatherData.weather[0].description }}</p>
     <p>Latitude: {{ weatherData.coord.lat }} Longitude: {{ weatherData.coord.lon }}</p>
      <!-- <p>Longitude: {{ weatherData.coord.lon }}</p> -->
      <P>Umidade do ar: {{ weatherData.main.humidity}}%</P>
   </div>
+
+
+  <h1>Estilo adicionados</h1>
+<br>
+<br>
+  <h1> Clima em {{weatherData.name}}</h1>
+  
+  <div class="card">
+    <img src="assets\Climaicon.png" alt="Ícone do Card" class="card-icon">
+    <div class="card-content">
+     <h1><p>Temperatura: {{ weatherData.main.temp }} °C</p></h1>
+     <p>{{ weatherData.weather[0].description }}</p>
+    </div>
+  </div>
+  
