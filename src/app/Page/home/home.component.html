@@ -1,3 +1,8 @@
+<div class="Busca">
+  <input type="text" [(ngModel)]="city" placeholder="Digite o nome da cidade">
+  <button (click)="getWeather()">Pesquisar</button>
+</div>
+
 <h1 class="container"> Clima em {{weatherData.name}}</h1>
 
 <div class="container">

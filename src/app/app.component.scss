@@ -31,3 +31,55 @@
     text-decoration: underline; 
   }
   
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(59, 18, 243);
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-content img {
+    width: 100px; 
+    height: auto;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .button-container button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: #f2f4f7; 
+    color: #0f0b0b; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+    
+    .button-container {
+      margin-top: 10px;
+    }
+  
+    .button-container button {
+      margin: 5px 0;
+    }
+  }
+  
