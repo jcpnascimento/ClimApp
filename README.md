@@ -19,6 +19,10 @@ Este projeto é uma aplicação web desenvolvida em Angular que permite aos usu�
 
 ## Como Executar o Projeto
 
+1. Acesse o Seguinte Link: [ClinApp](https://climapp-three-rho.vercel.app/)
+
+    OU
+
 1. Clone este repositório em sua máquina local.
 2. Instale as dependências usando o comando `npm install`.
 3. Inicie o servidor de desenvolvimento com o comando `ng serve`.
